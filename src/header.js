@@ -16,7 +16,7 @@ class Header extends Component{
         return(
             <header className="App-header">
                 <div className="full-container">
-                    <img src={this.props.srcImg} alt="MytineraryLogo" className="img-fluid" /*imagen de pantalla completa */ />
+                    <img src="..\img\MYtineraryLogo.png" alt="MytineraryLogo" className="img-fluid" /*imagen de pantalla completa */ />
                 </div>
                 <h3 className="display-3">
                     Find your perfect trip, designed by insiders who know and love cities.

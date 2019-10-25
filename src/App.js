@@ -3,6 +3,7 @@ import logo from './logo.svg';
 import './App.css';
 import Header from './header.js';
 import Body from './body.js'
+import Footer from './Footer.js';
 import {
   BrowserRouter as Router,
   Switch,
@@ -26,8 +27,9 @@ function App(props) {
 
           Learn React
   </a> */}
-        <Header srcImg="..\img\MYtineraryLogo.png" />
-        <Body srcImg="..\img\circled-right-2.png"/>
+        <Header /*srcImg="..\img\MYtineraryLogo.png"*/ />
+        <Body /*srcImg="..\img\circled-right-2.png"*/ />
+        <Footer />
     </div>
   );
 }
