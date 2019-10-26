@@ -5,6 +5,8 @@ import {
     Route,
     Link
   } from "react-router-dom";
+  import Image from 'react-bootstrap/Image';
+  //import 'bootstrap/dist/css/bootstrap.min.css';
 
   class CityPage extends Component{
     constructor(props){
@@ -13,13 +15,17 @@ import {
 
     render(){
         return(
-            <React.Fragment>
-                <h1 className="display-1">Start Browsing</h1>
-                <img src={this.props.srcImg}/>
-            </React.Fragment>
+            <div className="row justify-content-center">
+                <center>
+                    <h1 className="display-1">Start Browsing</h1>
+                    <Image src={this.props.srcImg} alt="Link" thumbnail/>
+                </center>
+            </div>
         )
     }
   }
+
+  
 
   
 export default CityPage;

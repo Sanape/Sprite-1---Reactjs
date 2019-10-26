@@ -1,5 +1,7 @@
 import React from 'react';
-import logo from './logo.svg';
+import logo from './img/MYtineraryLogo.png';
+import link from './img/circled-right-2.png';
+import home from './img/homeIcon.png'
 import './App.css';
 import Header from './header.js';
 import Body from './body.js'
@@ -16,7 +18,6 @@ import {
 function App(props) {
   return (
     <div>
-      {JSON.stringify(props.data)}
         {/*<img src={logo} className="App-logo" alt="logo" />
         <a
           className="App-link"
@@ -27,9 +28,9 @@ function App(props) {
 
           Learn React
   </a> */}
-        <Header /*srcImg="..\img\MYtineraryLogo.png"*/ />
-        <Body /*srcImg="..\img\circled-right-2.png"*/ />
-        <Footer />
+        <Header srcImg={logo} />
+        <Body srcImg={link} />
+        <Footer srcImg={home}/>
     </div>
   );
 }

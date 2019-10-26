@@ -5,17 +5,19 @@ import {
     Route,
     Link
   } from "react-router-dom";
+  //import 'bootstrap/dist/css/bootstrap.min.css'; 
 
   class Footer extends Component{
       constructor(props){
-          super();
+          super(props);
       }
 
       render(){
           return(
+
               <div className="container jumbotron">
                     <center>
-                        <img src="..\img\homeIcon.png" alt="Icono de Home" />
+                        <img src={this.props.srcImg} alt="Icono de Home" />
                     </center>
               </div>
           )
