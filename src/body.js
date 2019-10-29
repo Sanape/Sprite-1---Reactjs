@@ -6,23 +6,37 @@ import {
     Route,
     Link
   } from "react-router-dom";
+  import { Container, Row} from 'react-bootstrap';
+  import 'bootstrap/dist/css/bootstrap.min.css';
+  import Login from './Login.js'
 
-class Login extends Component{
+
+class Account extends Component{
     constructor(props){
         super(props);
     }
 
     render(){
         return(
-            <React.Fragment>
+            <Router>
                 <center>
                     <p>Want to build your own MYtinerary?</p>
                 </center>
-                <div className="container" id="login">
-                    <a href="">Log in</a>
-                    <a href="">Create account</a>
-                </div>
-            </React.Fragment>
+                 <nav >
+                     <div className="d-flex justify-content-around">
+                            <Link to="/Login">Log in</Link>
+                            <Link to="/CreateAccount">Creat account</Link>
+                    </div>
+                </nav>
+                <Switch>
+                    <Route path="/Login">
+                        <Login></Login>
+                    </Route>
+                    <Route path="/CreateAccount">
+
+                    </Route>
+                </Switch>
+            </Router>
         )
     }
 }
@@ -30,10 +44,10 @@ class Login extends Component{
 class Body extends Component{
     render(){
         return(
-            <body>
+            <React.Fragment>
                <CityPage srcImg={this.props.srcImg}/>
-               <Login />
-            </body>
+               <Account />
+            </React.Fragment>
         )
     }
 }

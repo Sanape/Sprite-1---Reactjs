@@ -6,7 +6,7 @@ import {
     Link
   } from "react-router-dom";
   import Image from 'react-bootstrap/Image';
-  //import 'bootstrap/dist/css/bootstrap.min.css';
+  import 'bootstrap/dist/css/bootstrap.min.css';
 
   class CityPage extends Component{
     constructor(props){
@@ -17,8 +17,10 @@ import {
         return(
             <div className="row justify-content-center">
                 <center>
-                    <h1 className="display-1">Start Browsing</h1>
-                    <Image src={this.props.srcImg} alt="Link" thumbnail/>
+                    <h5 className="display-5">Start Browsing</h5>
+                    <a className="app-link" href="#"></a>
+                    <Image className="App-arrow" src={this.props.srcImg} alt="Link"  />
+                    <a/>
                 </center>
             </div>
         )

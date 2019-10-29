@@ -5,7 +5,7 @@ import {
     Route,
     Link
   } from "react-router-dom";
-  //import 'bootstrap/dist/css/bootstrap.min.css'; 
+  import {Image, Container, Row} from 'react-bootstrap';
 
   class Footer extends Component{
       constructor(props){
@@ -14,14 +14,17 @@ import {
 
       render(){
           return(
-
-              <div className="container jumbotron">
+            
+              <div className="row justify-content-center">
                     <center>
-                        <img src={this.props.srcImg} alt="Icono de Home" />
+                        <a className="App-link-home">
+                        <Image className="App-home" src={this.props.srcImg} alt="Icono de Home" />
+                        </a>
                     </center>
               </div>
           )
       }
   }
+  //Teni-935
 
   export default Footer;
