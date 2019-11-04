@@ -5,7 +5,7 @@ const cors = require("cors")
 const routerCities = require('./city.routes')
 
 
-app.use(cors())
+app.use(cors()) //
 app.use(routerCities)
 
 
