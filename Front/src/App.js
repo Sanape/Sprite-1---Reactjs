@@ -36,8 +36,7 @@ function App(props) {
           </Navbar.Toggle>
         </Navbar>
         <Header srcLogo={logo}/>
-        <Body srcImg={link} />
-        <Footer srcImg={home}/>
+        <Footer srcImg={home} srcImg2={link}/>
     </div>
   );
 }

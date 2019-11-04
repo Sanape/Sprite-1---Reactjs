@@ -9,6 +9,19 @@ import Image from 'react-bootstrap/Image';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Cities from './Cities';
 
+class LinkImage extends Component{
+    render(){
+        return(
+            <center>
+            <h5 className="display-5">Start Browsing</h5>
+            <Link to="/Cities">
+                <Image className="App-arrow" src={this.props.srcImg} alt="Link"  />
+            </Link>
+        </center>
+        )
+    }
+}
+
   class CityPage extends Component{
     constructor(props){
         super(props)
@@ -18,13 +31,10 @@ import Cities from './Cities';
         return(
             <div className="row justify-content-center">
                 <Router>
-                    <center>
-                        <h5 className="display-5">Start Browsing</h5>
-                        <Link to="/Cities">
-                            <Image className="App-arrow" src={this.props.srcImg} alt="Link"  />
-                        </Link>
-                    </center>
                     <Switch>
+                        <Route exact path="/">
+                            <LinkImage srcImg={this.props.srcImg}/>
+                        </Route>
                         <Route path="/Cities">
                             <Cities></Cities>
                         </Route>

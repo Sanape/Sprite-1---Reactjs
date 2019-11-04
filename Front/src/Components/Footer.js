@@ -7,6 +7,7 @@ import {
   } from "react-router-dom";
   import {Image, Container, Row} from 'react-bootstrap';
   import Login from './Login.js';
+  import CityPage from './ToCityPage';
 
   class Account extends Component{
     constructor(props){
@@ -16,6 +17,17 @@ import {
     render(){
         return(
             <Router>
+                <Switch>
+                    <Route exact path="/">
+                        <CityPage srcImg={this.props.srcImg}/>
+                    </Route>
+                    <Route path="/Login">
+                        <Login></Login>
+                    </Route>
+                    <Route path="/CreateAccount">
+                    
+                    </Route>
+                </Switch>
                 <Container>
                     <center className="container">
                         <p>Want to build your own MYtinerary?</p>
@@ -29,14 +41,6 @@ import {
                         </div>
                     </nav>
                 </Container>
-                <Switch>
-                    <Route path="/Login">
-                        <Login></Login>
-                    </Route>
-                    <Route path="/CreateAccount">
-                    
-                    </Route>
-                </Switch>
             </Router>
         )
     }
@@ -52,7 +56,7 @@ import {
             
               <div className="row justify-content-center">
                 <Container>
-                    <Account></Account>
+                    <Account srcImg={this.props.srcImg2}></Account>
                 </Container>
                 <Container>  
                     <center>
