@@ -1,5 +1,5 @@
 import React, {Component} from "react";
-import './App.css';
+import '../App.css';
 import {Image,Container,Row} from 'react-bootstrap';
 import {
     BrowserRouter as Router,

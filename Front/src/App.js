@@ -4,9 +4,9 @@ import usuario from './img/Icono-Usuario.png'
 import link from './img/circled-right-2.png';
 import home from './img/homeIcon.png'
 import './App.css';
-import Header from './Header.js';
-import Body from './Body.js'
-import Footer from './Footer.js';
+import Header from './Components/Header';
+import Body from './Components/Body'
+import Footer from './Components/Footer';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {
   BrowserRouter as Router,
