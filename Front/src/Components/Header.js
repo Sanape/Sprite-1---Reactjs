@@ -1,12 +1,7 @@
 import React, {Component} from "react";
 import '../App.css';
 import {Image,Container,Row} from 'react-bootstrap';
-import {
-    BrowserRouter as Router,
-    Switch,
-    Route,
-    Link
-  } from "react-router-dom";
+
  
 
 class Header extends Component{

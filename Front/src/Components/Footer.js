@@ -16,19 +16,19 @@ import {
     render(){
         return(
             <Router>
-                <div>
+                <Container>
                     <center className="container">
                         <p>Want to build your own MYtinerary?</p>
                     </center>
-                </div>
-                <div className="container ">
+                </Container>
+                <Container>
                     <nav >
                         <div className="d-flex justify-content-around">
                                 <Link to="/Login">Log in</Link>
                                 <Link to="/CreateAccount">Creat account</Link>
                         </div>
                     </nav>
-                </div>
+                </Container>
                 <Switch>
                     <Route path="/Login">
                         <Login></Login>
@@ -51,16 +51,16 @@ import {
           return(
             
               <div className="row justify-content-center">
-                <div className="container">
+                <Container>
                     <Account></Account>
-                </div>
-                <div className="container">  
+                </Container>
+                <Container>  
                     <center>
                         <a className="App-link-home">
                         <Image className="App-home" src={this.props.srcImg} alt="Icono de Home" />
                         </a>
                     </center>
-                </div>
+                </Container>
               </div>
           )
       }

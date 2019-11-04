@@ -8,13 +8,8 @@ import Header from './Components/Header';
 import Body from './Components/Body'
 import Footer from './Components/Footer';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  Link
-} from "react-router-dom";
-import { Navbar, Image, Button, Nav } from 'react-bootstrap';
+
+import { Navbar, Image } from 'react-bootstrap';
 
 
 

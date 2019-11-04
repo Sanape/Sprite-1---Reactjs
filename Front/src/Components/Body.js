@@ -1,12 +1,6 @@
 import React, {Component} from 'react';
 import CityPage from './ToCityPage';
-import {
-    BrowserRouter as Router,
-    Switch,
-    Route,
-    Link
-  } from "react-router-dom";
-  import { Container, Row} from 'react-bootstrap';
+
   import 'bootstrap/dist/css/bootstrap.min.css';
 
 
